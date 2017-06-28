@@ -1,0 +1,147 @@
+html,body,div,ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,span,a,em,b,strong,img,input,textarea,select,form{margin: 0; padding: 0;}
+li{list-style: none;}
+img{border: 0 none; vertical-align:top;}
+a{color: #3d3d3d; text-decoration: none;}
+a:hover{color:#0f0;}
+input{border: none; outline: none;}
+.clearfix{*zoom:1;}
+.clearfix:after{content: "."; visibility: hidden; clear:both; display: block; height: 0; font-size: 0;}
+body{ font-family: "微软雅黑"; font-size:30px; color:#00091b; background-color:#3D3D3D; overflow-x: hidden;}
+
+.GG{width: 1280px; margin: 0 auto;}
+
+
+/*导航栏*/
+#header{background-color: #759ad0; opacity: 0.6; width: 100%; height:100px; position: fixed; top: 0; z-index: 999;}
+/*.logo{display: block; float: left; width: 300px;height:120px; background-color: #000;}*/
+.logo{width: 330px; height: 100px; float: left; font-size: 36px; padding-top: 0px; color: #3D3D3D;}
+.logo img{float: left; width: 100px; height: 100px;}
+.logo span{float: left; width: 200px; padding-top: 30px;padding-left: 15px; }
+.logo span b{ font-size:48px;  color: #DE3C05;}
+.nav{float: left;  text-align: center; padding-top: 50px; }
+.nav li{float: left; margin-left: 40px;}
+.nav li:nth-child(5){margin-left:100px;}
+.nav li a{ /*float: left; width: 200px; height: 120px; */font-size: 16px; font-weight: 900; color: #de3c05;}
+/*.nav li a{color: #de3c05;}*/ 
+.nav li a:hover{cursor: pointer; color: #a32202;}
+/*返回顶部按钮*/
+#gotop{ width: 50px; height: 50px; position: fixed; bottom: 50px; right: 150px; background-color: #00FF00; background: url(../img/BTN.png); background-size: 100% 100%;}
+
+/*VIP按钮*/
+#vip{position: fixed; bottom: 100px; right: 100px; width: 150px; height: 150px; background:url(../img/vip.png); background-size: 100% 100%;}
+
+/*内容*/
+#content{width: 100%; height: auto;}
+.content-01{width: 100%;height:840px; margin:100px auto 0; position: relative; padding-bottom:60px; background-color: #3D3D3D; }
+.content-01-T{ widows: 100%; height:100%;}
+.content-01-T li{float: left; width: 100%; height:100%; margin-bottom: 60px;}
+.content-01-T img{width: 100%; height:100%;}
+.flashBtn{ position:absolute; height:30px; left: 50%; margin-left:-200px; bottom:80px;}
+.flashBtn span{width:108px; height:10px; margin-right: 2px; background: #b8b8b8; display: inline-block; text-indent: -99em; overflow: hidden; cursor: pointer;}
+.flashBtn .current{  background: #006CC6;}
+.btn-left{position: absolute; top: 50%; left: 0; margin-top: -25px; color: #DE3C05; width: 80px; height: 80px; font-size: 36px; background: url(../img/left.png); text-indent: -99rem;overflow: hidden; background-size:100% 100%;}
+.btn-right{position: absolute; top: 50%; right: 0; margin-top: -25px; color: #DE3C05;width: 80px; height: 80px;font-size: 36px; background: url(../img/right.png); text-indent: -99rem;overflow: hidden; background-size:100% 100%;}
+.btn-left:hover{background-color: #333333; opacity: 0.5;}
+.btn-right:hover{background-color: #333333; opacity: 0.5;}
+
+.content-02{ width: 100%; height: auto; background-color: #333;}
+.content-02-title{width: 100%; height: 100px;  line-height: 100px; font-size: 48px; text-align: center; color: #A32202; font-weight: 900;}
+.content-02 p{text-align: center; display: block; width: 1280px; padding-bottom: 20px; margin: 0 auto; height: auto; line-height: 24px; font-size: 18px; color: #DE3C05;}
+
+.business{width:200%; height:400px;}
+.business li{float: left; width:280px; height: 400px; margin-bottom: 50px; border: 2px dashed #759AD0; margin-left: 30px;}
+.business li dl{width: 100%; height: 100%;}
+
+
+
+
+.content-03{width: 100%; height: auto; background-color: #03030b;}
+.content-03-title{width: 100%; height: 100px;margin-top: 20px; line-height: 100px; font-size: 48px; text-align: center; color: #A32202; font-weight: 900;}
+.video{width: 1280px; height: auto; margin: 20px auto;}
+.video-1{float: left; width:600px; height:400px; margin-top: 20px;margin-left: 50px; margin-right:50px ; border: 1px solid #00FF00;}
+.video-1 video{width: 100%; height: 100%;}
+
+.content-03 p{display: block; float: left; width:500px; padding-bottom: 20px; margin-top: 30px; height: auto; line-height: 30px; font-size: 14px; color: #DE3C05;}
+.content-03 p:nth-of-type(1){width: 500px;}
+/*.content-03 p:nth-of-type(2){width: 100%; padding-bottom: 0;}*/
+.content-03 p:nth-of-type(2){width: 90%; margin-top: 0px;padding-bottom: 0;margin-left: 50px;}
+.content-03 p:nth-of-type(3){width: 90%; margin-top: 0px; margin-left: 50px; }
+.content-03 h6{width:100%; height:80px; text-align: center; line-height: 50px; font-size: 32px; color: #A32202; margin: 20px auto;}
+@media only screen and (min-width: 100px) and (max-width: 1280px) {
+	
+	.content-03 p{display: none;}
+	.video-1{width: 90%;}
+	.video-1 embed{width: 100%; height: 100%;}
+	.content-02 p{font-size: 12px; font-weight: 900;}
+}
+
+.content-04{width: 100%; height: auto; background-color: #666;}
+.content-04-title{margin-top: 20px; width: 100%; height: 100px; line-height: 100px; font-size: 48px; text-align: center; color: #A32202; font-weight: 900;}
+.about-us{width: 1280px; height:700px; margin: 20px auto;}
+.about-us li{float: left; width: 350px; height: 220px; margin-left: 60px; margin-bottom: 20px; border: 1px dashed #A32202; overflow: hidden;}
+.about-us li img{width: 100%; height: 100%;}
+.about-us li:hover img{width: 110%; height: 110%; cursor: pointer; transition: 1s;}
+/*.content-05{width: 100%; height: auto; background-color:#111;}
+.content-05-title{width: 100%; height: 100px; line-height: 100px; font-size: 48px; text-align: center; color: #A32202; font-weight: 900;}
+.content-05 h6{width:1280px; height:auto; line-height: 30px; font-size: 30px; text-align: center; margin: 0 auto; color: #ffd700;}
+.content-05-we{width: 1280px; height:400px; margin: 50px auto;}
+.content-05-we li{float: left;margin-right: 50px; font-weight: 900; line-height: 30px;}
+.Contact{width:300px; height: 200px; padding-top: 200px;}
+.Contact dt{ font-size: 24px; color: #FFD700;}
+.Contact dd{font-size: 16px; color: #A32202;}
+.Map{width: 500px; height: 300px; border: 1px solid #759AD0;}*/
+
+/*页脚*/
+#foot{width: 100%; height: 150px; background-color:#3f4d63;}
+.bottom{width: 1280px; margin: 0 auto; height: 120px; padding-top:10px;text-align: center; line-height: 150px;}
+.bottom img{width: 120px; height: 120px;}
+.bottom span{ font-size: 36px;}
+.bottom b{font-size:60px; font-weight: 900px; color: #A32202;}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width: 100px) and (max-width: 1280px) {
+	#content{width:1280px;}
+	.content-03 video{margin-left: 60px;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
